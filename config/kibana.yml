@@ -5,9 +5,10 @@ server.name: hb-kibana
 server.host: "10.10.125.194"
 
 # elasticsearch setting
-elasticsearch.hosts: [ "http://10.10.125.231:9200", "https://10.10.125.232:9200", "http://10.10.125.233:9200"  ]
+elasticsearch.hosts: [ "https://10.10.125.231:9200", "https://10.10.125.232:9200", "https://10.10.125.233:9200"  ]
 elasticsearch.username: elastic
 elasticsearch.password: tvhub2020
+elasticsearch.ssl.verificationMode: none
 
 # xpack setting
 xpack.monitoring.ui.container.elasticsearch.enabled: true
