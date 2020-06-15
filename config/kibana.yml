@@ -1,0 +1,15 @@
+## Default Kibana configuration for docker target
+
+# kibana server setting
+server.name: hb-kibana
+server.host: "10.10.125.194"
+
+# elasticsearch setting
+elasticsearch.hosts: [ "10.10.125.231:9200", "10.10.125.232:9200", "10.10.125.233:9200"  ]
+elasticsearch.username: elastic
+elasticsearch.password: tvhub2020
+
+# xpack setting
+xpack.monitoring.ui.container.elasticsearch.enabled: true
+xpack.security.encryptionKey: "something_at_least_32_characters"
+xpack.security.sessionTimeout: 600000
