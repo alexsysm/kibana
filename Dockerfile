@@ -10,5 +10,5 @@ FROM docker.elastic.co/kibana/kibana:7.6.0@sha256:2cb31b8d865b4ccc93ca72d4f23d33
 SHELL ["/bin/bash", "-c"]
 
 # copy elasticsearch.yml
-COPY config/elasticsearch.yml /usr/share/kibana/config/elasticsearch.yml
+COPY config/kibana.yml /usr/share/kibana/config/kibana.yml
 
